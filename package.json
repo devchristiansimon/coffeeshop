@@ -15,7 +15,8 @@
     "npm": "^10.2.1",
     "react": "^18",
     "react-bootstrap": "^2.9.1",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sass": "^1.69.5"
   },
   "devDependencies": {
     "eslint": "^8",
