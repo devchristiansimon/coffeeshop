@@ -12,7 +12,8 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      {children}
+      <div className="container">{children}</div>
+
       <Fusszeile />
     </>
   );
