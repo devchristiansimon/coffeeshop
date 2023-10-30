@@ -42,7 +42,7 @@ const jsondb = {
     },
     {
       name: "Erdbeer-Sahnetorte",
-      beschreibung: "Lass ich fallen in diese sahnig-süße Sündenwolke",
+      beschreibung: "Lass dich fallen in diese sahnig-süße Sündenwolke",
       kategorie: "food",
       preis: 3.99,
       url: "erdbeertorte",
@@ -50,7 +50,7 @@ const jsondb = {
     },
     {
       name: "Pistazienmuffin",
-      beschreibung: "Nussig und frech, genau wie du!",
+      beschreibung: "Nussig und frech",
       kategorie: "food",
       preis: 2.99,
       url: "pistazienmuffin",
