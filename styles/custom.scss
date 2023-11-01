@@ -1,4 +1,12 @@
 $danger: #af1d3b;
 $success: #86c19f;
+$primary: #ffc01f;
+
+a:active {
+  color: black;
+}
+a:visited {
+  color: black;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";

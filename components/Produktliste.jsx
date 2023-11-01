@@ -9,7 +9,7 @@ export default function Produktliste() {
         {jsondb.produkte.map((produkt) => (
           <div key={produkt.name} className="mt-3 col">
             <Card>
-              <Link href={`/produkt/${produkt.url}`} passHref>
+              <Link href={`/produkt/${produkt.url}`}>
                 <Card.Img variant="top" src={produkt.bild} />
               </Link>
               <Card.Body>
