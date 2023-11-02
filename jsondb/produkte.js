@@ -7,6 +7,16 @@ const jsondb = {
       preis: 2.99,
       url: "filterkaffee",
       bild: "/bilder/sortiment/filterkaffee.jpg",
+      extras: [
+        {
+          text: "doppelt",
+          preis: 1,
+        },
+        {
+          text: "vegane Milch",
+          preis: 0.5,
+        },
+      ],
     },
     {
       name: "Couple Coffee",
@@ -15,6 +25,16 @@ const jsondb = {
       preis: 4.99,
       url: "couplekaffee",
       bild: "/bilder/sortiment/couplecoffee.jpg",
+      extras: [
+        {
+          text: "doppelt",
+          preis: 2,
+        },
+        {
+          text: "vegane Milch",
+          preis: 0.5,
+        },
+      ],
     },
     {
       name: "Weihnachtskaffee",
@@ -23,6 +43,16 @@ const jsondb = {
       preis: 4.99,
       url: "zimtkaffee",
       bild: "/bilder/sortiment/cinnamon-crema.jpg",
+      extras: [
+        {
+          text: "doppelt",
+          preis: 2,
+        },
+        {
+          text: "vegane Milch",
+          preis: 0.5,
+        },
+      ],
     },
     {
       name: "Cappuccino",
@@ -31,6 +61,16 @@ const jsondb = {
       preis: 3.99,
       url: "cappuccino",
       bild: "/bilder/sortiment/cappuccino.jpg",
+      extras: [
+        {
+          text: "doppelt",
+          preis: 2,
+        },
+        {
+          text: "vegane Milch",
+          preis: 0.5,
+        },
+      ],
     },
     {
       name: "Blueberry Muffin",
@@ -39,6 +79,16 @@ const jsondb = {
       preis: 2.99,
       url: "blueberrymuffin",
       bild: "/bilder/sortiment/blueberry-muffin.jpg",
+      extras: [
+        {
+          text: "doppelt",
+          preis: 2,
+        },
+        {
+          text: "mit Sahne",
+          preis: 1.5,
+        },
+      ],
     },
     {
       name: "Erdbeer-Sahnetorte",
@@ -47,6 +97,16 @@ const jsondb = {
       preis: 3.99,
       url: "erdbeertorte",
       bild: "/bilder/sortiment/erdbeersahnetorte.jpg",
+      extras: [
+        {
+          text: "doppelt",
+          preis: 3,
+        },
+        {
+          text: "Schokosahne",
+          preis: 1,
+        },
+      ],
     },
     {
       name: "Pistazienmuffin",
@@ -55,6 +115,16 @@ const jsondb = {
       preis: 2.99,
       url: "pistazienmuffin",
       bild: "/bilder/sortiment/pistazienmuffin.jpg",
+      extras: [
+        {
+          text: "doppelt",
+          preis: 2,
+        },
+        {
+          text: "mit Schokofüllung",
+          preis: 1,
+        },
+      ],
     },
   ],
 };
