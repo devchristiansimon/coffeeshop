@@ -1,5 +1,5 @@
 import { Table, CloseButton, Button, Card } from "react-bootstrap";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function Warenkorb() {
   return (

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { ListGroup, Button, ListGroupItem } from "react-bootstrap";
 import mongodb from "@/utils/mongodb";
 import Produkt from "@/models/Produkt";
@@ -27,8 +27,8 @@ export default function Produktseite({ produkt }) {
             className="rounded-3"
             src={produkt.bild}
             alt={produkt.name}
-            width={300}
-            height={400}
+            width={400}
+            height={300}
             layout="responsive"
           />
         </div>

@@ -1,5 +1,5 @@
 import { Carousel } from "react-bootstrap";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function Slider() {
   return (
@@ -11,7 +11,7 @@ export default function Slider() {
             src="/bilder/headerpics/flatcoffee.jpg"
             alt="Cappucino"
             width={3000}
-            height={400}
+            height={1000}
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -20,7 +20,7 @@ export default function Slider() {
             src="/bilder/headerpics/flat2.jpg"
             alt="espresso"
             width={3000}
-            height={400}
+            height={1000}
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -29,7 +29,7 @@ export default function Slider() {
             src="/bilder/headerpics/flat3.jpg"
             alt="bohnen"
             width={3000}
-            height={400}
+            height={1000}
           />
         </Carousel.Item>
       </Carousel>
