@@ -8,7 +8,6 @@ if (!cached) {
 
 async function dbConnect() {
   if (cached.con) {
-    console.log("DB Verbindung aktiv");
     return cached.con;
   }
   if (!cached.promise) {
@@ -20,7 +19,7 @@ async function dbConnect() {
     cached.promise = mongoose
       .connect(process.env.MONGODB_URI, options)
       .then((mongoose) => {
-        console.log("DB Verbindung gestartet");
+        // console.log("DB Verbindung gestartet");
         return mongoose;
       });
   }

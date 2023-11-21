@@ -1,14 +1,10 @@
-import { useRouter } from "next/router";
-import jsondb from "../../jsondb/produkte";
 import Link from "next/link";
 import Image from "next/image";
 import { ListGroup, Button, ListGroupItem } from "react-bootstrap";
+import mongodb from "@/utils/mongodb";
+import Produkt from "@/models/Produkt";
 
-export default function Produktseite() {
-  const router = useRouter();
-  const { url } = router.query;
-  const produkt = jsondb.produkte.find((a) => a.url === url);
-
+export default function Produktseite({ produkt }) {
   if (!produkt) {
     return (
       <div>
@@ -16,6 +12,7 @@ export default function Produktseite() {
       </div>
     );
   }
+  console.log(produkt.extras);
   return (
     <div>
       <div className="text-dark">
@@ -43,10 +40,13 @@ export default function Produktseite() {
             </ListGroupItem>
             <ListGroupItem>{produkt.beschreibung}</ListGroupItem>
             <ListGroupItem>
-              Extras: doppelt{" "}
-              <input className="form-check-input me-2" type="checkbox" />
-              extra Pommes{" "}
-              <input className="form-check-input me-2" type="checkbox" />
+              {produkt.extras.length ? "Extras: " : <p></p>}
+              {produkt.extras.map((extra) => (
+                <span key={extra._id}>
+                  {extra.text}{" "}
+                  <input className="form-check-input me-2" type="checkbox" />
+                </span>
+              ))}
             </ListGroupItem>
             <ListGroupItem>
               <input
@@ -66,4 +66,15 @@ export default function Produktseite() {
       </div>
     </div>
   );
+}
+
+export async function getServerSideProps(context) {
+  const url = context.params.url;
+  await mongodb.dbConnect();
+  const produkt = await Produkt.findOne({ url }).lean();
+  return {
+    props: {
+      produkt: JSON.parse(JSON.stringify(produkt)),
+    },
+  };
 }
