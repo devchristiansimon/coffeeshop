@@ -12,7 +12,6 @@ export default function Produktseite({ produkt }) {
       </div>
     );
   }
-  console.log(produkt.extras);
   return (
     <div>
       <div className="text-dark">

@@ -17,7 +17,8 @@ async function dbConnect() {
       bufferCommands: false,
     };
     cached.promise = mongoose
-      .connect(process.env.MONGODB_URI, options)
+      // .connect(process.env.MONGODB_URI, options)
+      .connect(process.env.MONGODB_URI)
       .then((mongoose) => {
         // console.log("DB Verbindung gestartet");
         return mongoose;
